@@ -16,8 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
-    let mazeQueue = DispatchQueue(label: "maze.queue", qos: .userInitiated)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,11 +40,11 @@ class ViewController: UIViewController {
     @IBAction func generatePressed(_ sender: Any) {
         if self.mazeModel.isGenerating {
             let alert = UIAlertController(title: "Hey", message: "The maze is generating, you want to stop and generate a new one?", preferredStyle: UIAlertControllerStyle.alert)
-//            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler:{ (action) in
-//                
-//                self.stopGenerateMaze()
-//                self.startGenerateMaze()
-//            }))
+            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler:{ (action) in
+                
+                self.stopGenerateMaze()
+                self.startGenerateMaze()
+            }))
             alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler:nil))
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -63,10 +62,17 @@ extension ViewController {
         self.collectionView.reloadData()
         
         self.startLoading()
-        self.mazeQueue.async {
-            self.mazeModel.generate { [weak self] (rooms) in
-                self?.rooms = rooms
-                DispatchQueue.main.async { [weak self] in
+        
+        self.mazeModel.generate()
+        self.mazeModel.generatedComplete = { (rooms, error) in
+            DispatchQueue.main.async { [weak self] in
+                if let error = error {
+                    self?.stopLoading()
+                    let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Oh...", style: UIAlertActionStyle.cancel, handler:nil))
+                    self?.present(alert, animated: true, completion: nil)
+                } else if let rooms = rooms {
+                    self?.rooms = rooms
                     self?.stopLoading()
                     self?.collectionView.reloadData()
                 }
@@ -75,9 +81,7 @@ extension ViewController {
     }
     
     func stopGenerateMaze() {
-        self.mazeQueue.async {
-            self.mazeModel.stopGenerate()
-        }
+        self.mazeModel.stopGenerate()
     }
 }
 
