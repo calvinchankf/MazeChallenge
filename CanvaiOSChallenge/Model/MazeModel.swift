@@ -252,7 +252,7 @@ class MazeModel {
         return result
     }
     
-    // debug
+    // i use it for debug
     static func printRooms(rooms: [[Room]]) {
         for i in 0..<rooms.count {
             var row = ""

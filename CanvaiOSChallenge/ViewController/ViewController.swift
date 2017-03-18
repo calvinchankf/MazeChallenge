@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     }
 }
 
-// maze
+// maze control
 extension ViewController {
     
     func startGenerateMaze() {
