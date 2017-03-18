@@ -7,13 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1AE2561E7CDF4F004039F4 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; };
+		3E1AE2571E7CDF56004039F4 /* MazeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB211E7C478D00CED261 /* MazeModel.swift */; };
+		3E1AE2581E7CDF62004039F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */; };
+		3E1AE2591E7CDF62004039F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */; };
 		3E6BDAD41E7B72FD00CED261 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */; };
-		3E6BDAD61E7B72FD00CED261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD51E7B72FD00CED261 /* ViewController.swift */; };
 		3E6BDAD91E7B72FD00CED261 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD71E7B72FD00CED261 /* Main.storyboard */; };
 		3E6BDADB1E7B72FD00CED261 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDADA1E7B72FD00CED261 /* Assets.xcassets */; };
 		3E6BDADE1E7B72FD00CED261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDADC1E7B72FD00CED261 /* LaunchScreen.storyboard */; };
 		3E6BDAE91E7B72FD00CED261 /* CanvaiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAE81E7B72FD00CED261 /* CanvaiOSChallengeTests.swift */; };
 		3E6BDAF41E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAF31E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift */; };
+		3E6BDB021E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; };
+		3E6BDB031E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; };
+		3E6BDB0A1E7B81B900CED261 /* TakeHomeTask.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3E6BDB221E7C478D00CED261 /* MazeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB211E7C478D00CED261 /* MazeModel.swift */; };
+		3E6BDB231E7C478D00CED261 /* MazeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB211E7C478D00CED261 /* MazeModel.swift */; };
+		3E6BDB251E7C47CF00CED261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB241E7C47CF00CED261 /* ViewController.swift */; };
+		3E6BDB261E7C47CF00CED261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB241E7C47CF00CED261 /* ViewController.swift */; };
+		3E6BDB271E7C47CF00CED261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB241E7C47CF00CED261 /* ViewController.swift */; };
+		3E6BDB2A1E7C47DF00CED261 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB281E7C47DF00CED261 /* RoomCell.swift */; };
+		3E6BDB2B1E7C47DF00CED261 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB281E7C47DF00CED261 /* RoomCell.swift */; };
+		3E6BDB2C1E7C47DF00CED261 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB281E7C47DF00CED261 /* RoomCell.swift */; };
+		3E6BDB2D1E7C47DF00CED261 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDB291E7C47DF00CED261 /* RoomCell.xib */; };
+		3E6BDB2E1E7C47DF00CED261 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDB291E7C47DF00CED261 /* RoomCell.xib */; };
+		3E6BDB2F1E7C47DF00CED261 /* RoomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDB291E7C47DF00CED261 /* RoomCell.xib */; };
+		3E6BDB321E7C482100CED261 /* RawRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB301E7C482100CED261 /* RawRoom.swift */; };
+		3E6BDB331E7C482100CED261 /* RawRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB301E7C482100CED261 /* RawRoom.swift */; };
+		3E6BDB341E7C482100CED261 /* RawRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB301E7C482100CED261 /* RawRoom.swift */; };
+		3E6BDB351E7C482100CED261 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB311E7C482100CED261 /* Room.swift */; };
+		3E6BDB361E7C482100CED261 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB311E7C482100CED261 /* Room.swift */; };
+		3E6BDB371E7C482100CED261 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB311E7C482100CED261 /* Room.swift */; };
+		44886A0DFB836CD4551583CD /* Pods_CanvaiOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C673FA0A9F84601E507BC7 /* Pods_CanvaiOSChallenge.framework */; };
+		A58C6DA8B8635F8CD4A66238 /* Pods_CanvaiOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28D2DD0E007987B049C20A5 /* Pods_CanvaiOSChallengeTests.framework */; };
+		C36FB1A170431E65FE0E85BE /* Pods_CanvaiOSChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48563AFBF3ACE29621752BB2 /* Pods_CanvaiOSChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +59,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3E6BDB0B1E7B81BA00CED261 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3E6BDB0A1E7B81B900CED261 /* TakeHomeTask.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3E6BDAD01E7B72FD00CED261 /* CanvaiOSChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvaiOSChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E6BDAD51E7B72FD00CED261 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E6BDAD81E7B72FD00CED261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E6BDADA1E7B72FD00CED261 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E6BDADD1E7B72FD00CED261 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +86,23 @@
 		3E6BDAEF1E7B72FD00CED261 /* CanvaiOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvaiOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6BDAF31E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvaiOSChallengeUITests.swift; sourceTree = "<group>"; };
 		3E6BDAF51E7B72FD00CED261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TakeHomeTask.framework; sourceTree = "<group>"; };
+		3E6BDB051E7B78B600CED261 /* CanvaiOSChallenge-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CanvaiOSChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
+		3E6BDB211E7C478D00CED261 /* MazeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeModel.swift; sourceTree = "<group>"; };
+		3E6BDB241E7C47CF00CED261 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
+		3E6BDB281E7C47DF00CED261 /* RoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomCell.swift; path = View/RoomCell.swift; sourceTree = "<group>"; };
+		3E6BDB291E7C47DF00CED261 /* RoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RoomCell.xib; path = View/RoomCell.xib; sourceTree = "<group>"; };
+		3E6BDB301E7C482100CED261 /* RawRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RawRoom.swift; path = Unit/RawRoom.swift; sourceTree = "<group>"; };
+		3E6BDB311E7C482100CED261 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Unit/Room.swift; sourceTree = "<group>"; };
+		48563AFBF3ACE29621752BB2 /* Pods_CanvaiOSChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanvaiOSChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64BC54D6B857C1F60B67F441 /* Pods-CanvaiOSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallenge/Pods-CanvaiOSChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		779072E9549AE8C4E28AC1D6 /* Pods-CanvaiOSChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallengeUITests/Pods-CanvaiOSChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F1287324E6CED9A4D710411 /* Pods-CanvaiOSChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallengeTests/Pods-CanvaiOSChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		82D55049E792566B63B79AB5 /* Pods-CanvaiOSChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallengeTests/Pods-CanvaiOSChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		89C673FA0A9F84601E507BC7 /* Pods_CanvaiOSChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanvaiOSChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A471F3D7007DAF8041AFF164 /* Pods-CanvaiOSChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallenge/Pods-CanvaiOSChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		BA57FB793D2C5019470C2FAF /* Pods-CanvaiOSChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallengeUITests/Pods-CanvaiOSChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F28D2DD0E007987B049C20A5 /* Pods_CanvaiOSChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanvaiOSChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6BDB021E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */,
+				44886A0DFB836CD4551583CD /* Pods_CanvaiOSChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6BDB031E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */,
+				A58C6DA8B8635F8CD4A66238 /* Pods_CanvaiOSChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +128,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36FB1A170431E65FE0E85BE /* Pods_CanvaiOSChallengeUITests.framework in Frameworks */,
+				3E1AE2561E7CDF4F004039F4 /* TakeHomeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B43103B3F233234C2B69E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89C673FA0A9F84601E507BC7 /* Pods_CanvaiOSChallenge.framework */,
+				F28D2DD0E007987B049C20A5 /* Pods_CanvaiOSChallengeTests.framework */,
+				48563AFBF3ACE29621752BB2 /* Pods_CanvaiOSChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B7EE3D218CA82B185A6C427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A471F3D7007DAF8041AFF164 /* Pods-CanvaiOSChallenge.debug.xcconfig */,
+				64BC54D6B857C1F60B67F441 /* Pods-CanvaiOSChallenge.release.xcconfig */,
+				82D55049E792566B63B79AB5 /* Pods-CanvaiOSChallengeTests.debug.xcconfig */,
+				7F1287324E6CED9A4D710411 /* Pods-CanvaiOSChallengeTests.release.xcconfig */,
+				BA57FB793D2C5019470C2FAF /* Pods-CanvaiOSChallengeUITests.debug.xcconfig */,
+				779072E9549AE8C4E28AC1D6 /* Pods-CanvaiOSChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3E6BDAC71E7B72FC00CED261 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +166,8 @@
 				3E6BDAE71E7B72FD00CED261 /* CanvaiOSChallengeTests */,
 				3E6BDAF21E7B72FD00CED261 /* CanvaiOSChallengeUITests */,
 				3E6BDAD11E7B72FD00CED261 /* Products */,
+				2B7EE3D218CA82B185A6C427 /* Pods */,
+				2B43103B3F233234C2B69E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +184,17 @@
 		3E6BDAD21E7B72FD00CED261 /* CanvaiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */,
+				3E6BDB1D1E7C468B00CED261 /* Model */,
+				3E6BDB201E7C46A300CED261 /* View */,
+				3E6BDB1F1E7C469A00CED261 /* ViewController */,
+				3E6BDB1E1E7C469300CED261 /* Unit */,
 				3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */,
-				3E6BDAD51E7B72FD00CED261 /* ViewController.swift */,
 				3E6BDAD71E7B72FD00CED261 /* Main.storyboard */,
-				3E6BDADA1E7B72FD00CED261 /* Assets.xcassets */,
 				3E6BDADC1E7B72FD00CED261 /* LaunchScreen.storyboard */,
+				3E6BDADA1E7B72FD00CED261 /* Assets.xcassets */,
 				3E6BDADF1E7B72FD00CED261 /* Info.plist */,
+				3E6BDB051E7B78B600CED261 /* CanvaiOSChallenge-Bridging-Header.h */,
 			);
 			path = CanvaiOSChallenge;
 			sourceTree = "<group>";
@@ -125,6 +217,40 @@
 			path = CanvaiOSChallengeUITests;
 			sourceTree = "<group>";
 		};
+		3E6BDB1D1E7C468B00CED261 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E6BDB211E7C478D00CED261 /* MazeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E6BDB1E1E7C469300CED261 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				3E6BDB301E7C482100CED261 /* RawRoom.swift */,
+				3E6BDB311E7C482100CED261 /* Room.swift */,
+			);
+			name = Unit;
+			sourceTree = "<group>";
+		};
+		3E6BDB1F1E7C469A00CED261 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E6BDB241E7C47CF00CED261 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3E6BDB201E7C46A300CED261 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E6BDB281E7C47DF00CED261 /* RoomCell.swift */,
+				3E6BDB291E7C47DF00CED261 /* RoomCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +258,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E6BDAF81E7B72FD00CED261 /* Build configuration list for PBXNativeTarget "CanvaiOSChallenge" */;
 			buildPhases = (
+				1275A5766135AB0869876DDB /* [CP] Check Pods Manifest.lock */,
 				3E6BDACC1E7B72FD00CED261 /* Sources */,
 				3E6BDACD1E7B72FD00CED261 /* Frameworks */,
 				3E6BDACE1E7B72FD00CED261 /* Resources */,
+				3E6BDB0B1E7B81BA00CED261 /* Embed Frameworks */,
+				74666AA9D5A0C20D6329DE39 /* [CP] Embed Pods Frameworks */,
+				90498A21A84FD0C892258F10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E6BDAFB1E7B72FD00CED261 /* Build configuration list for PBXNativeTarget "CanvaiOSChallengeTests" */;
 			buildPhases = (
+				123623FB5CD4E96F6FB9F797 /* [CP] Check Pods Manifest.lock */,
 				3E6BDAE01E7B72FD00CED261 /* Sources */,
 				3E6BDAE11E7B72FD00CED261 /* Frameworks */,
 				3E6BDAE21E7B72FD00CED261 /* Resources */,
+				9F437C0639465F342A726266 /* [CP] Embed Pods Frameworks */,
+				B13D79EDA2A4E6F1A40A3FC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E6BDAFE1E7B72FD00CED261 /* Build configuration list for PBXNativeTarget "CanvaiOSChallengeUITests" */;
 			buildPhases = (
+				E550296D572512718FEF48DA /* [CP] Check Pods Manifest.lock */,
 				3E6BDAEB1E7B72FD00CED261 /* Sources */,
 				3E6BDAEC1E7B72FD00CED261 /* Frameworks */,
 				3E6BDAED1E7B72FD00CED261 /* Resources */,
+				69147E5CD96EA870C6DC36A5 /* [CP] Embed Pods Frameworks */,
+				C1A9559EAFEB7F6B9D7C27E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +373,7 @@
 			files = (
 				3E6BDADE1E7B72FD00CED261 /* LaunchScreen.storyboard in Resources */,
 				3E6BDADB1E7B72FD00CED261 /* Assets.xcassets in Resources */,
+				3E6BDB2D1E7C47DF00CED261 /* RoomCell.xib in Resources */,
 				3E6BDAD91E7B72FD00CED261 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6BDB2E1E7C47DF00CED261 /* RoomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,17 +390,160 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6BDB2F1E7C47DF00CED261 /* RoomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		123623FB5CD4E96F6FB9F797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1275A5766135AB0869876DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69147E5CD96EA870C6DC36A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanvaiOSChallengeUITests/Pods-CanvaiOSChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74666AA9D5A0C20D6329DE39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanvaiOSChallenge/Pods-CanvaiOSChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90498A21A84FD0C892258F10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanvaiOSChallenge/Pods-CanvaiOSChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F437C0639465F342A726266 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanvaiOSChallengeTests/Pods-CanvaiOSChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13D79EDA2A4E6F1A40A3FC3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanvaiOSChallengeTests/Pods-CanvaiOSChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A9559EAFEB7F6B9D7C27E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CanvaiOSChallengeUITests/Pods-CanvaiOSChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E550296D572512718FEF48DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E6BDACC1E7B72FD00CED261 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6BDAD61E7B72FD00CED261 /* ViewController.swift in Sources */,
+				3E6BDB251E7C47CF00CED261 /* ViewController.swift in Sources */,
+				3E6BDB2A1E7C47DF00CED261 /* RoomCell.swift in Sources */,
+				3E6BDB351E7C482100CED261 /* Room.swift in Sources */,
+				3E6BDB221E7C478D00CED261 /* MazeModel.swift in Sources */,
+				3E6BDB321E7C482100CED261 /* RawRoom.swift in Sources */,
 				3E6BDAD41E7B72FD00CED261 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +552,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6BDB261E7C47CF00CED261 /* ViewController.swift in Sources */,
+				3E6BDB231E7C478D00CED261 /* MazeModel.swift in Sources */,
+				3E6BDB361E7C482100CED261 /* Room.swift in Sources */,
+				3E6BDB2B1E7C47DF00CED261 /* RoomCell.swift in Sources */,
+				3E1AE2581E7CDF62004039F4 /* AppDelegate.swift in Sources */,
+				3E6BDB331E7C482100CED261 /* RawRoom.swift in Sources */,
 				3E6BDAE91E7B72FD00CED261 /* CanvaiOSChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +566,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6BDB271E7C47CF00CED261 /* ViewController.swift in Sources */,
+				3E6BDB2C1E7C47DF00CED261 /* RoomCell.swift in Sources */,
+				3E1AE2571E7CDF56004039F4 /* MazeModel.swift in Sources */,
 				3E6BDAF41E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift in Sources */,
+				3E1AE2591E7CDF62004039F4 /* AppDelegate.swift in Sources */,
+				3E6BDB341E7C482100CED261 /* RawRoom.swift in Sources */,
+				3E6BDB371E7C482100CED261 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,36 +704,55 @@
 		};
 		3E6BDAF91E7B72FD00CED261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A471F3D7007DAF8041AFF164 /* Pods-CanvaiOSChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CanvaiOSChallenge",
+				);
 				INFOPLIST_FILE = CanvaiOSChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.CanvaiOSChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CanvaiOSChallenge/CanvaiOSChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		3E6BDAFA1E7B72FD00CED261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64BC54D6B857C1F60B67F441 /* Pods-CanvaiOSChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CanvaiOSChallenge",
+				);
 				INFOPLIST_FILE = CanvaiOSChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.CanvaiOSChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CanvaiOSChallenge/CanvaiOSChallenge-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		3E6BDAFC1E7B72FD00CED261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D55049E792566B63B79AB5 /* Pods-CanvaiOSChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CanvaiOSChallenge",
+				);
 				INFOPLIST_FILE = CanvaiOSChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.CanvaiOSChallengeTests;
@@ -452,10 +764,15 @@
 		};
 		3E6BDAFD1E7B72FD00CED261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F1287324E6CED9A4D710411 /* Pods-CanvaiOSChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CanvaiOSChallenge",
+				);
 				INFOPLIST_FILE = CanvaiOSChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.CanvaiOSChallengeTests;
@@ -467,9 +784,14 @@
 		};
 		3E6BDAFF1E7B72FD00CED261 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA57FB793D2C5019470C2FAF /* Pods-CanvaiOSChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CanvaiOSChallenge",
+				);
 				INFOPLIST_FILE = CanvaiOSChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.CanvaiOSChallengeUITests;
@@ -481,9 +803,14 @@
 		};
 		3E6BDB001E7B72FD00CED261 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 779072E9549AE8C4E28AC1D6 /* Pods-CanvaiOSChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CanvaiOSChallenge",
+				);
 				INFOPLIST_FILE = CanvaiOSChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.calvinchankf.CanvaiOSChallengeUITests;
@@ -512,6 +839,7 @@
 				3E6BDAFA1E7B72FD00CED261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E6BDAFB1E7B72FD00CED261 /* Build configuration list for PBXNativeTarget "CanvaiOSChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +848,7 @@
 				3E6BDAFD1E7B72FD00CED261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3E6BDAFE1E7B72FD00CED261 /* Build configuration list for PBXNativeTarget "CanvaiOSChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +857,7 @@
 				3E6BDB001E7B72FD00CED261 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

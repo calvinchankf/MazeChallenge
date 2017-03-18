@@ -1,0 +1,15 @@
+PODS:
+  - Kingfisher (3.3.2)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Kingfisher (~> 3.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Kingfisher: 8e60094454aeb4746eb588eb57f794d891c6ea88
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: e22e35bd410935ed16760b292cc9f35af39279e6
+
+COCOAPODS: 1.1.1
