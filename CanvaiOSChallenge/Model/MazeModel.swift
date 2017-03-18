@@ -14,18 +14,28 @@ class MazeModel {
     
     let mazeManager = MazeManager()
     
+    // below two array look pretty similar, but their usage are different
+    
+    // hash key of "x,y" to the struct instance of rawRoom
+    // 1. to avoid 2nd visit on each node
+    // 2. easier for convertCoordinatesToArray() to look for a room
     var coordinates = [String: RawRoom]()
+    
+    // hash key of roomId to the struct instance of rawRoom
+    // 1. avoid a same room isn't fetched more than once
+    var roomCache = [String: RawRoom]()
     
     // userInitiated: highest priority
     let mazeQueue = DispatchQueue(label: "maze.queue", qos: .userInitiated)
     
     // since the dfs is async, i need a dispatchGroup to get notofied after all calls are completed
     var myGroup = DispatchGroup()
-//    var blockCnt = 0
     
+    // readonly from outside and only set from inside
+    // to ensure that no others can change the value causing error
     private(set) var isGenerating = false
     
-    var shouldRestart = false
+    private var shouldRestart = false
     
     // since i may need to alert error in different methods from this file
     // closure var is the easiest way of implementation
@@ -99,19 +109,27 @@ class MazeModel {
     }
     
     // if error, call generateComplete error directly
+    // cache is used to aviod fetchRoom being called more than once
     func fetchRoom(identifier: String, complete:@escaping (_ room : RawRoom) -> ()) {
         
+        // user stop generating
         if !self.isGenerating { return }
-        self.myGroup.enter()
         
+        if let cachedRoom = self.roomCache[identifier] {
+            return complete(cachedRoom)
+        }
+        
+        self.myGroup.enter()
         mazeManager.fetchRoom(withIdentifier: identifier) { [weak self] (data: Data?, error: Error?) in
             if let error = error {
                 print("fetchRoom error \(error)")
                 self?.generateError(error: error)
             } else if let data = data {
                 let room = RawRoom(data: data)
+                self?.roomCache[identifier] = room
                 complete(room)
             }
+            // call leave() no matter how or the dispatch group won't finish
             self?.myGroup.leave()
         }
     }
@@ -121,7 +139,7 @@ class MazeModel {
     }
     
     // if room is locked, unlock it
-    // if not return a room directly
+    // if not, return a room directly
     func giveMeARoomNoMatterHow(dir: Direction, x: Int, y: Int,
                                 complete:@escaping (_ room: RawRoom) -> ()) {
         
@@ -140,7 +158,9 @@ class MazeModel {
     }
     
     // Depth First Search, recursive and async
-    // Hash table is used to avoid 2nd visit on each node
+    // Hash table is used to
+    //      1. to avoid 2nd visit on each node
+    //      2. easier for convertCoordinatesToArray() to look for a room
     // Time Complexity: O(n), n is the number of nodes
     // Space Complexity: O(n), a hash table of nodes is used
     func dfs(_ node: RawRoom?) {
