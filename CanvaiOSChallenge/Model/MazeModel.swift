@@ -8,6 +8,8 @@
 
 import Foundation
 
+import TakeHomeTask
+
 class MazeModel {
     
     let mazeManager = MazeManager()

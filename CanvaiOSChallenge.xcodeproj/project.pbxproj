@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E1AE2561E7CDF4F004039F4 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; };
 		3E1AE2571E7CDF56004039F4 /* MazeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB211E7C478D00CED261 /* MazeModel.swift */; };
 		3E1AE2581E7CDF62004039F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */; };
 		3E1AE2591E7CDF62004039F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAD31E7B72FD00CED261 /* AppDelegate.swift */; };
@@ -17,9 +16,6 @@
 		3E6BDADE1E7B72FD00CED261 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6BDADC1E7B72FD00CED261 /* LaunchScreen.storyboard */; };
 		3E6BDAE91E7B72FD00CED261 /* CanvaiOSChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAE81E7B72FD00CED261 /* CanvaiOSChallengeTests.swift */; };
 		3E6BDAF41E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDAF31E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift */; };
-		3E6BDB021E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; };
-		3E6BDB031E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; };
-		3E6BDB0A1E7B81B900CED261 /* TakeHomeTask.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3E6BDB221E7C478D00CED261 /* MazeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB211E7C478D00CED261 /* MazeModel.swift */; };
 		3E6BDB231E7C478D00CED261 /* MazeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB211E7C478D00CED261 /* MazeModel.swift */; };
 		3E6BDB251E7C47CF00CED261 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB241E7C47CF00CED261 /* ViewController.swift */; };
@@ -37,6 +33,10 @@
 		3E6BDB351E7C482100CED261 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB311E7C482100CED261 /* Room.swift */; };
 		3E6BDB361E7C482100CED261 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB311E7C482100CED261 /* Room.swift */; };
 		3E6BDB371E7C482100CED261 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6BDB311E7C482100CED261 /* Room.swift */; };
+		3EA8B9A21E7D178600EF1FB4 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA8B9A01E7D178600EF1FB4 /* TakeHomeTask.framework */; };
+		3EA8B9A31E7D178600EF1FB4 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA8B9A01E7D178600EF1FB4 /* TakeHomeTask.framework */; };
+		3EA8B9A41E7D178C00EF1FB4 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA8B9A01E7D178600EF1FB4 /* TakeHomeTask.framework */; };
+		3EA8B9A51E7D178C00EF1FB4 /* TakeHomeTask.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA8B9A01E7D178600EF1FB4 /* TakeHomeTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44886A0DFB836CD4551583CD /* Pods_CanvaiOSChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C673FA0A9F84601E507BC7 /* Pods_CanvaiOSChallenge.framework */; };
 		A58C6DA8B8635F8CD4A66238 /* Pods_CanvaiOSChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28D2DD0E007987B049C20A5 /* Pods_CanvaiOSChallengeTests.framework */; };
 		C36FB1A170431E65FE0E85BE /* Pods_CanvaiOSChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48563AFBF3ACE29621752BB2 /* Pods_CanvaiOSChallengeUITests.framework */; };
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3E6BDB0A1E7B81B900CED261 /* TakeHomeTask.framework in Embed Frameworks */,
+				3EA8B9A51E7D178C00EF1FB4 /* TakeHomeTask.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +86,6 @@
 		3E6BDAEF1E7B72FD00CED261 /* CanvaiOSChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvaiOSChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E6BDAF31E7B72FD00CED261 /* CanvaiOSChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvaiOSChallengeUITests.swift; sourceTree = "<group>"; };
 		3E6BDAF51E7B72FD00CED261 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TakeHomeTask.framework; sourceTree = "<group>"; };
 		3E6BDB051E7B78B600CED261 /* CanvaiOSChallenge-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CanvaiOSChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		3E6BDB211E7C478D00CED261 /* MazeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeModel.swift; sourceTree = "<group>"; };
 		3E6BDB241E7C47CF00CED261 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +93,7 @@
 		3E6BDB291E7C47DF00CED261 /* RoomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RoomCell.xib; path = View/RoomCell.xib; sourceTree = "<group>"; };
 		3E6BDB301E7C482100CED261 /* RawRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RawRoom.swift; path = Unit/RawRoom.swift; sourceTree = "<group>"; };
 		3E6BDB311E7C482100CED261 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Room.swift; path = Unit/Room.swift; sourceTree = "<group>"; };
+		3EA8B9A01E7D178600EF1FB4 /* TakeHomeTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TakeHomeTask.framework; sourceTree = "<group>"; };
 		48563AFBF3ACE29621752BB2 /* Pods_CanvaiOSChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CanvaiOSChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64BC54D6B857C1F60B67F441 /* Pods-CanvaiOSChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallenge/Pods-CanvaiOSChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		779072E9549AE8C4E28AC1D6 /* Pods-CanvaiOSChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvaiOSChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanvaiOSChallengeUITests/Pods-CanvaiOSChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6BDB021E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */,
 				44886A0DFB836CD4551583CD /* Pods_CanvaiOSChallenge.framework in Frameworks */,
+				3EA8B9A41E7D178C00EF1FB4 /* TakeHomeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +119,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6BDB031E7B76F300CED261 /* TakeHomeTask.framework in Frameworks */,
 				A58C6DA8B8635F8CD4A66238 /* Pods_CanvaiOSChallengeTests.framework in Frameworks */,
+				3EA8B9A21E7D178600EF1FB4 /* TakeHomeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36FB1A170431E65FE0E85BE /* Pods_CanvaiOSChallengeUITests.framework in Frameworks */,
-				3E1AE2561E7CDF4F004039F4 /* TakeHomeTask.framework in Frameworks */,
+				3EA8B9A31E7D178600EF1FB4 /* TakeHomeTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +162,7 @@
 		3E6BDAC71E7B72FC00CED261 = {
 			isa = PBXGroup;
 			children = (
+				3EA8B9A01E7D178600EF1FB4 /* TakeHomeTask.framework */,
 				3E6BDAD21E7B72FD00CED261 /* CanvaiOSChallenge */,
 				3E6BDAE71E7B72FD00CED261 /* CanvaiOSChallengeTests */,
 				3E6BDAF21E7B72FD00CED261 /* CanvaiOSChallengeUITests */,
@@ -184,7 +185,6 @@
 		3E6BDAD21E7B72FD00CED261 /* CanvaiOSChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				3E6BDB011E7B76F300CED261 /* TakeHomeTask.framework */,
 				3E6BDB1D1E7C468B00CED261 /* Model */,
 				3E6BDB201E7C46A300CED261 /* View */,
 				3E6BDB1F1E7C469A00CED261 /* ViewController */,
@@ -707,10 +707,12 @@
 			baseConfigurationReference = A471F3D7007DAF8041AFF164 /* Pods-CanvaiOSChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CanvaiOSChallenge",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CanvaiOSChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -727,10 +729,12 @@
 			baseConfigurationReference = 64BC54D6B857C1F60B67F441 /* Pods-CanvaiOSChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Z748RTCFAJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CanvaiOSChallenge",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CanvaiOSChallenge/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -752,6 +756,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CanvaiOSChallenge",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CanvaiOSChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -772,6 +777,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CanvaiOSChallenge",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CanvaiOSChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -791,6 +797,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CanvaiOSChallenge",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CanvaiOSChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -810,6 +817,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CanvaiOSChallenge",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CanvaiOSChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

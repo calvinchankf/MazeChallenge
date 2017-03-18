@@ -6,10 +6,10 @@
 //  Copyright © 2017年 me.calvinchankf. All rights reserved.
 //
 
-#ifndef CanvaiOSChallenge_Bridging_Header_h
-#define CanvaiOSChallenge_Bridging_Header_h
+//#ifndef CanvaiOSChallenge_Bridging_Header_h
+//#define CanvaiOSChallenge_Bridging_Header_h
 
 #import <TakeHomeTask/TakeHomeTask.h>
 #import <TakeHomeTask/MazeManager.h>
 
-#endif /* CanvaiOSChallenge_Bridging_Header_h */
+//#endif /* CanvaiOSChallenge_Bridging_Header_h */
