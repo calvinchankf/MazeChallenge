@@ -42,10 +42,9 @@ class ViewController: UIViewController {
             let alert = UIAlertController(title: "Hey", message: "The maze is generating, you want to stop and generate a new one?", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler:{ (action) in
                 
-                self.stopGenerateMaze()
-                self.startGenerateMaze()
+                self.reGenerateMaze()
             }))
-            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.cancel, handler:nil))
+            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.destructive, handler:nil))
             self.present(alert, animated: true, completion: nil)
         } else {
             self.startGenerateMaze()
@@ -64,7 +63,7 @@ extension ViewController {
         self.startLoading()
         
         self.mazeModel.generate()
-        self.mazeModel.generatedComplete = { (rooms, error) in
+        self.mazeModel.generateComplete = { (rooms, error) in
             DispatchQueue.main.async { [weak self] in
                 if let error = error {
                     self?.stopLoading()
@@ -80,8 +79,8 @@ extension ViewController {
         }
     }
     
-    func stopGenerateMaze() {
-        self.mazeModel.stopGenerate()
+    func reGenerateMaze() {
+        self.mazeModel.reGenerate()
     }
 }
 

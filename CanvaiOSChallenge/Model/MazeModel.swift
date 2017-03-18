@@ -14,21 +14,27 @@ class MazeModel {
     
     var coordinates = [String: RawRoom]()
     
-    let mazeQueue = DispatchQueue(label: "maze.queue", qos: .userInitiated) // userInitiated: highest priority 
+    // userInitiated: highest priority
+    let mazeQueue = DispatchQueue(label: "maze.queue", qos: .userInitiated)
+    
     // since the dfs is async, i need a dispatchGroup to get notofied after all calls are completed
-//    var myGroup: DispatchGroup?
     var myGroup = DispatchGroup()
+//    var blockCnt = 0
     
     private(set) var isGenerating = false
     
-    var generatedComplete: ((_ data: [[Room]]?, _ error: Error?)  -> ())?
+    var shouldRestart = false
+    
+    // since i may need to alert error in different methods from this file
+    // closure var is the easiest way of implementation
+    var generateComplete: ((_ data: [[Room]]?, _ error: Error?)  -> ())?
     
     init() {
         
     }
     
     // methods
-    
+    // it basically fetch a room to start
     func generate() {
         
         print("start generate")
@@ -36,8 +42,7 @@ class MazeModel {
         self.coordinates = [String: RawRoom]()
         
         let startTime = Date().timeIntervalSince1970
-//        self.myGroup = DispatchGroup()
-        myGroup.enter()
+        self.myGroup.enter()
         
         self.isGenerating = true
         
@@ -46,20 +51,17 @@ class MazeModel {
             self.mazeManager.fetchStartRoom { [weak self] (data: Data?, error: Error?) in
                 
                 if let error = error {
-                    print("fetchStartRoom error \(error)")
                     self?.generateError(error: error)
                     return
                 }
                 
                 guard let data = data else {
-                    print("no data")
-                    self?.generateError(error: NSError(domain:"", code:0, userInfo:nil))
+                    self?.generateError(error: NSError(domain:"no data", code:0, userInfo:nil))
                     return
                 }
                 
                 guard let firstRoomId = RawRoom(data: data).id else {
-                    print("fetch first room error")
-                    self?.generateError(error: NSError(domain:"", code:0, userInfo:nil))
+                    self?.generateError(error: NSError(domain:"no id for the start room?", code:0, userInfo:nil))
                     return
                 }
                 
@@ -78,18 +80,28 @@ class MazeModel {
                 return // if self is nil, the whole mazeModel has been deinit-ed, no need to callback
             }
             
-            let duration = Date().timeIntervalSince1970 - startTime
-            let result = MazeModel.convertCoordinatesToArray(coors: weakSelf.coordinates)
-//            weakSelf.printRooms(rooms: result)
-            print("Finished all requests \(weakSelf.coordinates.count) in \(duration) sec")
-            weakSelf.isGenerating = false
-//            complete(result)
-            weakSelf.generatedComplete?(result, nil)
+            if weakSelf.shouldRestart {
+                print("last group.leave() get called, finally i can restart from now")
+                weakSelf.shouldRestart = false
+                weakSelf.generate()
+            } else {
+                let duration = Date().timeIntervalSince1970 - startTime
+                let result = MazeModel.convertCoordinatesToArray(coors: weakSelf.coordinates)
+//                weakSelf.printRooms(rooms: result)
+                print("Finished all requests \(weakSelf.coordinates.count) in \(duration) sec")
+                weakSelf.isGenerating = false
+                weakSelf.generateComplete?(result, nil)
+            }
+            
         }
     }
     
     // if error, call generateComplete error directly
     func fetchRoom(identifier: String, complete:@escaping (_ room : RawRoom) -> ()) {
+        
+        if !self.isGenerating { return }
+        self.myGroup.enter()
+        
         mazeManager.fetchRoom(withIdentifier: identifier) { [weak self] (data: Data?, error: Error?) in
             if let error = error {
                 print("fetchRoom error \(error)")
@@ -98,6 +110,7 @@ class MazeModel {
                 let room = RawRoom(data: data)
                 complete(room)
             }
+            self?.myGroup.leave()
         }
     }
     
@@ -110,21 +123,16 @@ class MazeModel {
     func giveMeARoomNoMatterHow(dir: Direction, x: Int, y: Int,
                                 complete:@escaping (_ room: RawRoom) -> ()) {
         
-        if !self.isGenerating { return }
-        
-        self.myGroup.enter()
-        
         var key = dir.room
         if let lock = dir.lock {
             key = self.unlockRoom(lock: lock)
         }
         if let finalKey = key {
-            self.fetchRoom(identifier: finalKey, complete: { [weak self] (room) in
+            self.fetchRoom(identifier: finalKey, complete: { (room) in
                 var newRoom = room
                 newRoom.x = x
                 newRoom.y = y
                 complete(newRoom)
-                self?.myGroup.leave()
             })
         }
     }
@@ -169,21 +177,22 @@ class MazeModel {
         }
     }
     
-    func stopGenerate() {
-        print("stopGenerate")
+    func reGenerate() {
+        print("reGenerate")
         self.isGenerating = false
-//        self.myGroup?.wait()
+        self.shouldRestart = true
+        
         self.coordinates.removeAll()
     }
     
     func generateError(error: Error) {
         self.isGenerating = false
-        self.generatedComplete?(nil, error)
+        self.shouldRestart = false
+        self.generateComplete?(nil, error)
     }
     
     // Time Complexity: O(n)
     // Space Complexity: O(1), only 6 variables are used except the result
-    // pure function: input -> output only, avoid side effects so static function is used
     static func convertCoordinatesToArray(coors: [String: RawRoom]) -> [[Room]] {
         
         var minX = Int.max
